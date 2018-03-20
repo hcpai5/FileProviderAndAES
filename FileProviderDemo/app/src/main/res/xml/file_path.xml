@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--举个例子解释一下（external-files-path）-->
+    <!--代表目录：/storage/emulated/0/Android/data/com.example.fileproviderdemo/files/text/plain-->
+    <!--external-files-path就代表/storage/emulated/0/Android/data/com.example.fileproviderdemo/files/text/plain-->
+    <!--后面的path就是替换content://com.example.fileproviderdemo.provider/fileFile/text/plain/a.txt这里的fileFile的-->
+    <!--只要两个目录最后一样就可以了-->
+    <!--/storage/emulated/0/Android/data/com.example.fileproviderdemo/files/text/plain/a.txt-->
+    <!--content://com.example.fileproviderdemo.provider/fileFile/text/plain/a.txt-->
+    <external-path name="myFileProvider" path="zhihu/"/>
+    <external-cache-path name="cacheFile" path="/"/>
+    <external-files-path name="fileFile" path="/"/>
+</paths>
